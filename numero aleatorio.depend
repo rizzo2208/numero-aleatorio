@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1647382175 source:c:\users\usuario\desktop\challenge\numero aleatorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
