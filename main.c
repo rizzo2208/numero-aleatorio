@@ -2,19 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 void main(){
-
-    int numValor,numPlayer, puntos=0, bandera=0 ;
-    char opc='a';
+    
+    // inicializo las variables
+    
+    int numValor,numPlayer, puntos=0; 
+    int bandera=0 //bandera para salir del ciclo while del juego. 
+    char opc='a'; //bandera para salir del ciclo while del sistema.
 
     do{
+        //genero un numero aleatorio entre 0 y 1000.
         srand(time(NULL));
         numValor= 0+rand()%(1000+1-0); //variable= limite inferior + rand()%(limite superior +1-limite inferior)
 
         do{
-            printf("ingrese un numero:");
-            fflush(stdin);
-            scanf("%d",&numPlayer);
-
+            printf("ingrese un numero:");// pido numero al usuario.
+            fflush(stdin);//limpio el buffer.
+            scanf("%d",&numPlayer);// escaneo y gaurdo.
+            
+            //verifico si el numero ingresado es mayo, menor o igual.
+            
             if(numPlayer > numValor ){
                 printf("\nsu numero es mayor\n!!!");
 
